@@ -24,7 +24,7 @@ public class StudentServiceImp implements StudentService {
     }
 
     @Override
-    public int deleteBysno(String sno) {
+    public int deleteBysno(Integer sno) {
         return this.studentMapper.deleteBysno(sno);
     }
 

@@ -1,4 +1,7 @@
 #开发配置
+server:
+    port: 8081
+
 spring:
     datasource:
         url: jdbc:mysql://localhost:3306/sp_demo
