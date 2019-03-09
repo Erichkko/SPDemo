@@ -1,0 +1,13 @@
+
+DROP TABLE student;
+
+CREATE TABLE `STUDENT` (
+  `SNO` INT(11) NOT NULL AUTO_INCREMENT COMMENT '学号',
+  `SNAME` VARCHAR(110) DEFAULT NULL COMMENT '学生姓名',
+  `SSEX` VARCHAR(30) NOT NULL COMMENT '学生性别',
+   PRIMARY KEY (`SNO`)
+) ENGINE=INNODB  DEFAULT CHARSET=utf8 COMMENT='学生信息表';
+
+INSERT INTO student (sname,ssex) VALUES('王帅','男');
+INSERT INTO student (sname,ssex) VALUES('admin','未知');
+SELECT * FROM student WHERE sno=1;
