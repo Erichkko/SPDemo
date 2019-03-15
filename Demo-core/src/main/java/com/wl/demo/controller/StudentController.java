@@ -35,10 +35,14 @@ public class StudentController {
     public String add(Student student) {
         return null;
     }
+
+    @ApiOperation(value = "删除指定学生信息",notes = "更新学生信息")
     @PostMapping("update")
-    public String update(Student student) {
+    public String update(@RequestBody Student student) {
         return null;
     }
+
+    @ApiOperation(value = "删除指定学生信息",notes = "删除指定学生信息")
     @PostMapping("/delete")
     @ApiImplicitParam(name = "sno",value = "学号",paramType = "form",required = true,dataType = "Integer")
     public String deleteBysno(Integer sno) {
@@ -46,7 +50,7 @@ public class StudentController {
         return "";
     }
     //获取用户列表
-    @ApiOperation(value = "获取指定学生列表",notes = "获取学生详细描述")
+    @ApiOperation(value = "获取指定学生列表",notes = "获取学生详细")
     @ApiImplicitParam(name = "sno",value = "学号",paramType = "path",required = true,dataType = "Integer")
     @GetMapping(value = "/query/{sno}")
     public String queryStudentBySno(@PathVariable Integer sno) {
