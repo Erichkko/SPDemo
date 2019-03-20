@@ -1,0 +1,13 @@
+person:
+  last-name: ÍõË§21
+  age: 1112
+  boss: false
+  birth: 2010/1/1
+  list:
+    - dog
+    - cat
+    - pig
+  maps: {k1: v1,k2: v2}
+  dog:
+    name: °¢»Æ
+    age: 11

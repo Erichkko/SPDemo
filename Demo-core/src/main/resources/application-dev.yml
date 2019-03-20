@@ -31,3 +31,16 @@ spring:
         testWhileIdle: true
         testOnBorrow: false
         testOnReturn: false
+person:
+    last-name: 王帅1 ${random.long}
+    age: 11
+    boss: false
+    birth: 2010/1/1
+    list:
+        - dog
+        - cat
+        - pig
+    maps: {k1: v1,k2: v2}
+    dog:
+        name: 阿黄
+        age: 11
